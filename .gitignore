@@ -1,0 +1,4 @@
+.vscode/
+sim
+out.dat
+mem_regs.txt
