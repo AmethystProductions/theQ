@@ -12,6 +12,7 @@ ds_Register ds_create_register(int nq_L, double err_L, double sigma_L)
    ds_Register reg;
    FILE *out=fopen("mem_regs.txt","w");
 
+   // nq == cubit index
    reg.nq = nq_L;
    reg.nc = pow(2, nq_L);
    reg.err = err_L;
