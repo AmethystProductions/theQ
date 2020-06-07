@@ -20,17 +20,18 @@
 int main(){
     
     int i,j,k,N, qubit;
-    ds_Register reg;
     FILE *out=fopen("out.dat","w");
     clock_t start, end;
     double cpu_time_used;
 
     // create register with 12 qubits
+    ds_Register reg;
     int exit = 0;
     int num_qubits = 12;
     start = clock();
     ds_initialize_simulator(0);
     reg = ds_create_register(num_qubits, 0, 0);
+    reg_list[0] = reg;
     
     while (!exit)
     {
